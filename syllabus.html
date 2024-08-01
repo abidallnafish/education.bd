@@ -47,6 +47,85 @@
     </div>
     <!-- Spinner End -->
 
+<!-- Navigation Start -->
+
+<div class="navigation fixed-top custom-shadow d-flex justify-content-center align-items-center">
+    <a href="index.html" class="navbar-brand d-flex align-items-center mb-2 mt-1"
+        style="margin-right: 0px!important; margin-left: 13px!important;">
+        <img src="img/mainlogo.png" width="70">
+    </a>
+    <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon">
+                    <!-- <ion-icon name="home-outline"></ion-icon> -->
+                    <ion-icon name="home"></ion-icon>
+                </span>
+                <span class="text">Home</span>
+                <span class="circle"></span>
+            </a>
+        </li>
+        <li class="list active">
+            <a href="syllabus.html">
+                <span class="icon">
+                    <!-- <ion-icon name="person-outline"></ion-icon> -->
+                    <ion-icon name="document"></ion-icon>
+                </span>
+                <span class="text">Syllabus</span>
+                <span class="circle"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="calender.html">
+                <span class="icon">
+                    <!-- <ion-icon name="chatbubble-outline"></ion-icon> -->
+                    <ion-icon name="calendar-sharp"></ion-icon>
+
+                </span>
+                <span class="text">Calender</span>
+                <span class="circle"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="calculator.html">
+                <span class="icon">
+                    <!-- <ion-icon name="camera-outline"></ion-icon> -->
+                    <ion-icon name="Calculator"></ion-icon>
+                </span>
+                <span class="text">Calculator</span>
+                <span class="circle"></span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="about.html">
+                <span class="icon">
+                    <!-- <ion-icon name="settings-outline"></ion-icon> -->
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <span class="text">About</span>
+                <span class="circle"></span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const list = document.querySelectorAll('.list');
+
+    function activeLink() {
+        list.forEach((item) =>
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+</script>
+
+<!-- Navigation End -->
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0 fonty">
