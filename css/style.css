@@ -79,6 +79,10 @@
 }
 
 /*** Navbar ***/
+.navbar {
+  background: linear-gradient(180deg, #a5cacf, #ffffff);
+}
+
 .navbar .dropdown-toggle::after {
   border: none;
   content: "\f107";
@@ -530,8 +534,6 @@
   box-shadow: 0px 10px 20px rgba(0.644, 0.644, 0.644, 0.644); /* Adjust the blur radius and color opacity as needed */
 }
 
-
-
 .navigation {
   position: fixed;
   width: auto;
@@ -540,7 +542,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .navigation ul {
