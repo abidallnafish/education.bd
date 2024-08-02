@@ -497,7 +497,6 @@
 .btn-success {
   height: 50px !important;
 }
-
 .page-header {
   background-color: var(--primary) !important;
 }
@@ -513,7 +512,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 825px) {
   .navbar {
     display: none;
     /* Hide navbar on small screens and below */
