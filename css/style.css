@@ -439,6 +439,7 @@
   background-color: var(--primary);
 }
 
+
 /*** Calculator ***/
 
 .calculator {
@@ -513,13 +514,6 @@
   .navigation {
     display: none;
     /* Hide navigation on large screens and above */
-  }
-}
-
-@media (max-width: 825px) {
-  .navbar {
-    display: none;
-    /* Hide navbar on small screens and below */
   }
 }
 

@@ -107,3 +107,18 @@
     
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function() {
+    navigateTo('about'); // Load the home page initially
+});
+
+function navigateTo(page) {
+    fetch(`pages/${page}.html`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading page:', error);
+            document.getElementById('content').innerHTML = "<p>Error loading page.</p>";
+        });
+}
