@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Education</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/mainlogo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-rBS6YzGVrIYbpxU4yfbjqHYY5Y3hzlfUPQ5T0BJ4q+S4E6FJLT60fSoEJhZ7Jv6m" crossorigin="anonymous">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body style="
+background-image: url(img/COLOR013.jpg)!important;
+background-size: 500px;
+background-position: center;
+position: relative;
+background-repeat: no-repeat;
+background-position: 950px 35px;
+">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary spinner-border" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navigation Start -->
+    <div class="navigation fixed-top custom-shadow d-flex justify-content-center align-items-center">
+        <a href="index.html" class="navbar-brand d-flex align-items-center mb-2 mt-1"
+            style="margin-right: 0px!important; margin-left: 13px!important;">
+            <img src="img/mainlogo.png" width="70">
+        </a>
+        <ul>
+            <li class="list">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="syllabus.html">
+                    <span class="icon">
+                        <ion-icon name="document"></ion-icon>
+                    </span>
+                    <span class="text">Syllabus</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list active">
+                <a href="calender.html">
+                    <span class="icon">
+                        <ion-icon name="calendar-sharp"></ion-icon>
+                    </span>
+                    <span class="text">Calender</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="calculator.html">
+                    <span class="icon">
+                        <ion-icon name="Calculator"></ion-icon>
+                    </span>
+                    <span class="text">Calculator</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="about.html">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <span class="text">About</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const list = document.querySelectorAll('.list');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink));
+    </script>
+    <!-- Navigation End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0 fonty">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-4 mb-2 mt-2">
+            <img src="img/mainlogo.png" alt="" srcset="" width="70">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="syllabus.html" class="nav-item nav-link">Syllabus</a>
+                <a href="calender.html" class="nav-item nav-link active">Calender</a>
+                <a href="calculator.html" class="nav-item nav-link">Calculator</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+            </div>
+        </div>
+        <style>
+            .navbar-toggler-icon {
+                background-image: url(img/clipart1101213.png) !important;
+                height: 1.6em !important;
+                width: 1.6em !important;
+            }
+
+            .navbar-toggler {
+                border-color: rgba(255, 255, 255, 0) !important;
+            }
+
+            .navbar-toggler:focus,
+            .navbar-toggler:active {
+                outline: none;
+                box-shadow: none;
+            }
+        </style>
+    </nav><br><br><br><br><br><br>
+    <!-- Navbar End -->
+
+    <h3 class="text-center">2024 Calendar</h3><br>
+
+    <div class="container d-flex justify-content-around">
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=7&bgcolor=%23ffffff&ctz=Asia%2FDhaka&showTitle=0&showNav=0&showPrint=0&showTz=0&showTabs=0&showDate=1&showCalendars=0&src=YWJpZGhvc3NhaW4xMDgyMDA3QGdtYWlsLmNvbQ&src=Y2xhc3Nyb29tMTEzMDAxNTY5ODQ2Njc4NTQ2NzYyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE1NzkwMTEyOTcxNjIyODc4MDU0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23137333&color=%23007b83"
+            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div><br><br>
+
+     <!-- Footer Start -->
+     <div class="container-fluid text-light mb-0 footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Services</h4>
+                    <a class="btn btn-link" href="syllabus.html">Syllabus</a>
+                    <a class="btn btn-link" href="calender.html">Calender</a>
+                    <a class="btn btn-link" href="calculator.html">Calculator</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-white mb-3">Quick Links</h4>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="about.html">Contact Us</a>
+                        <a class="btn btn-link" href="about.html">Privacy Policy</a>
+                        <a class="btn btn-link" href="about.html">Conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">Contacts</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mirpur 10, Dhaka, Bangladesh</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0.0.0.0.0.0</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@education.bd.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-light text-center py-3">
+        <sup>©</sup> 2024 Copyright
+        <a class="text-reset fw-bold" href="https://abidallnafish.github.io/education.bd/"><b>Abid All Nafish</b></a>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="btn btn-primary"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Java for Back to Top -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Show or hide the button when scrolling
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            // Scroll to the top when the button is clicked
+            $('#back-to-top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

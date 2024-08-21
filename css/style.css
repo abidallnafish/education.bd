@@ -325,6 +325,9 @@
 }
 
 /*** Footer ***/
+.footer {
+  background-color: #006878;
+}
 .footer .btn.btn-social {
   margin-right: 5px;
   width: 35px;
@@ -340,7 +343,7 @@
 }
 
 .footer .btn.btn-social:hover {
-  color: var(--primary);
+  color: var(--dark);
 }
 
 .footer .btn.btn-link {
@@ -368,14 +371,8 @@
   box-shadow: none;
 }
 
-.footer .copyright {
-  padding: 25px 0;
-  font-size: 15px;
-  border-top: 1px solid rgba(256, 256, 256, 0.1);
-}
-
-.footer .copyright a {
-  color: var(--light);
+.footer-copyright {
+  background-color: rgb(83, 83, 83);
 }
 
 .footer .footer-menu a {
@@ -430,15 +427,75 @@
 
 #back-to-top {
   position: fixed;
-  bottom: 50px;
+  bottom: 52px;
   right: 20px;
   display: none; /* Initially hidden */
-  z-index: 99;
+  z-index: 100;
   color: white;
-  border-color: var(--primary);
-  background-color: var(--primary);
+  border-radius: 5px;
+  border-color: rgb(83, 83, 83);
+  background-color: rgb(83, 83, 83);
 }
 
+/*** Educational Cards ***/
+
+.custom-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows wrapping to a new row if there's not enough space */
+  gap: 20px;
+  /* Space between cards */
+  justify-content: space-between;
+  /* Distribute space evenly */
+}
+
+.custom-card-item {
+  flex: 1 1 calc(25% - 20px);
+  /* Default: 4 cards per row */
+  max-width: calc(25% - 20px);
+  /* Ensure cards do not exceed the width */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-card-body {
+  flex-grow: 1;
+  /* Allows the card body to expand and fill available space */
+}
+
+.custom-card-img {
+  height: 200px;
+  /* Set a fixed height for images */
+  object-fit: cover;
+  /* Ensures the image fits well */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-card-item {
+      flex: 1 1 calc(50% - 20px);
+      /* 2 cards per row on tablets and mobile devices */
+      max-width: calc(50% - 20px);
+      /* Ensure cards do not exceed the width */
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-card-item {
+      flex: 1 1 calc(100% - 20px);
+      /* 1 card per row on very small screens */
+      max-width: calc(100% - 20px);
+      /* Ensure cards do not exceed the width */
+  }
+}
 
 /*** Calculator ***/
 
@@ -514,6 +571,13 @@
   .navigation {
     display: none;
     /* Hide navigation on large screens and above */
+  }
+}
+
+@media (max-width: 825px) {
+  .navbar {
+    display: none;
+    /* Hide navbar on small screens and below */
   }
 }
 
