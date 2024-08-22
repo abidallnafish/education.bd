@@ -490,9 +490,9 @@
 
 @media (max-width: 576px) {
   .custom-card-item {
-      flex: 1 1 calc(100% - 20px);
+      flex: 1 1 calc(100%);
       /* 1 card per row on very small screens */
-      max-width: calc(100% - 20px);
+      max-width: calc(100%);
       /* Ensure cards do not exceed the width */
   }
 }
