@@ -45,24 +45,6 @@ position: relative;
 background-repeat: no-repeat;
 background-position: 950px 35px;
 ">
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <span class="loader"></span>
-    </div>
-    <script>
-        window.addEventListener("load", function () {
-            const spinner = document.getElementById("spinner");
-            spinner.classList.add("show");
-
-            // Wait for 1 second before hiding the spinner
-            setTimeout(function () {
-                spinner.classList.remove("show");
-            }, 1000); // 1 second delay
-        });
-    </script>
-    <!-- Spinner End -->
-
     <!-- Navigation Start -->
     <div class="navigation fixed-top custom-shadow d-flex justify-content-center align-items-center">
         <a href="index.html" class="navbar-brand d-flex align-items-center mb-2 mt-1"
